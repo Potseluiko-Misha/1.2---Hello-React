@@ -18,17 +18,23 @@
         constructor() {
           super();
           this.state = {
-            txt: 'Hello from React!'
-          }
+            txt: "",
+          };
         }
         render() {
           return (
             <>
               <div className="top">
-                <input type="text" id="inputFld" />
+                <input
+                  type="text"
+                  id="inputFld"
+                  onChange={(e) => this.setState({ txt: e.target.value })}
+                />
               </div>
               <div className="bottom">
-                <span className="output">{this.state.txt}</span>
+                <span className="output">
+                  {this.state.txt.split("").reverse().join("")}
+                </span>
               </div>
             </>
           );
