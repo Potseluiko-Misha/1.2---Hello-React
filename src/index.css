@@ -7,7 +7,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.app {
+  position: absolute;
+  border: 1px solid;
+  width: 500px;
+  height: 460px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.fruit {
+  position: relative;
+  background-color: rgba(0, 200, 0, 0.9);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin: 10px;
 }
