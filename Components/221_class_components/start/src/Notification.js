@@ -16,7 +16,7 @@ class Notification extends Component {
     return (
       <div className="notification-widget">
         <div className="toggle-btn" onClick={this.toggleDisplay}>
-          No
+          N
         </div>
         {this.state.show ? <NotificationText text={this.props.text}/> : null}
       </div>
